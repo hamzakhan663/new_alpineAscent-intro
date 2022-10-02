@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Raleway', sans-serif;
+}
+
+.overall-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.input-space{
+    width: 200px;
+    height: 25px;
+    margin-top: 8px;
+    outline: none;
+    margin-bottom: 8px;
+}
+input::placeholder{
+    padding-left: 4px;
+}
+.our-email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+}
+.our-phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+}
+.address-text{
+    text-align: justify;
+    max-width: 300px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+}
+.address-header{
+    font-size: 22px;
+}
+
+.submit-button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 7px;
+    font-weight: 600;
+    color: white;
+    background-color: #69C1CD;
+    border: none;
+    transition: 0.5s all ease-in-out;
+}
+.submit-button:hover{
+background-color: #c4a484;
+box-shadow: 1px 2px 1px 1px gray;
+border-radius: 20px;
+}
+label{
+    font-weight: 500;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.check-text{
+    padding-left: 5px;
+}
+#message{
+    margin-top: 10px;
+    outline: none;
+}
+#message::placeholder{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+img{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
