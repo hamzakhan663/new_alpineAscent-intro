@@ -1,0 +1,161 @@
+*{
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   margin: 0;
+   padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    color: white;
+   min-height: 50px;
+   padding: 0px 24px;
+
+}
+.fullnav{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+.nav-branding{
+    font-size: 2rem;
+    pointer-events: none;
+    margin: 0;
+    padding: 5px;
+   font-weight: 700;
+}
+.nav-menu{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap:20px;
+    padding: 10px;
+    margin: 0;
+}
+
+.nav-item{
+    list-style-type: none;
+    padding: 0 30px;
+    align-items: center;
+    
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20PX;
+    transition: 2s ease-in-out;
+    align-items: center;
+}
+.nav-item:hover{
+    color:#C4A484;
+}
+.nav-link:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+
+}
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+   .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+   }
+
+   .nav-item{
+    margin: 16px 0;
+   }
+
+   .nav-menu.active{
+    left: 0;
+   }
+}
+#carousel-images{
+    height: 100vh;
+}
+
+.website-counter {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+cursor: pointer;
+margin: 0;
+padding: 0;
+
+  }
+  
+  #reset {
+    margin-top: 20px;
+    background-color: rgba(96, 96, 96, 0.4);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 20px;
+    color: white;
+    border: 0;
+  }
+  .WVC{
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .reset-buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
